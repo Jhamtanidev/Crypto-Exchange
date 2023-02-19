@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-welcome {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-services {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 100%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-transactions {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 25%, 1) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* Add transition to icon hover effects */
+a:hover .icon {
+  transform: scale(1.1);
+  transition: transform 0.2sease-in-out infinite;
+}
+
+/* Add transition to text gradient hover effect */
+.text-gradient:hover {
+  background-position: -500px;
+  transition: background-position 0.5s ease-out;
+}
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-style: dashed;
+}
+
+.eth-card {
+  background-color: #a099ff;
+  background-image: radial-gradient(
+      at 83% 67%,
+      rgb(152, 231, 156) 0,
+      transparent 58%
+    ),
+    radial-gradient(at 67% 20%, hsla(357, 94%, 71%, 1) 0, transparent 59%),
+    radial-gradient(at 88% 35%, hsla(222, 81%, 65%, 1) 0, transparent 50%),
+    radial-gradient(at 31% 91%, hsla(9, 61%, 61%, 1) 0, transparent 52%),
+    radial-gradient(at 27% 71%, hsla(336, 91%, 65%, 1) 0, transparent 49%),
+    radial-gradient(at 74% 89%, hsla(30, 98%, 65%, 1) 0, transparent 51%),
+    radial-gradient(at 53% 75%, hsla(174, 94%, 68%, 1) 0, transparent 45%);
+  border: 2px solid #fff;
+  animation: ethBorderPulse 1s ease infinite;
+  background-size: 500% 500%;
+  animation: ethGradient 10s ease infinite;
+}
+
+@keyframes ethGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes ethBorderPulse {
+  0% {
+    border-color: #fff;
+  }
+  50% {
+    border-color: #ccc;
+  }
+  100% {
+    border-color: #fff;
+  }
+}
+
+.text-gradient {
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 4% 36%,
+      hsla(0, 0%, 100%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.linkedin-icon {
+  transition: all 0.4s ease-in-out;
+}
+
+.linkedin-icon:hover {
+  color: #0077b5;
+  transform: scale(1.2);
+}
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-item {
+  background: radial-gradient(at 83% 67%, rgb(152, 231, 156) 0, transparent 58%),
+    radial-gradient(at 67% 20%, hsla(357, 94%, 71%, 1) 0, transparent 59%),
+    radial-gradient(at 88% 35%, hsla(222, 81%, 65%, 1) 0, transparent 50%),
+    radial-gradient(at 31% 91%, hsla(9, 61%, 61%, 1) 0, transparent 52%),
+    radial-gradient(at 27% 71%, hsla(336, 91%, 65%, 1) 0, transparent 49%),
+    radial-gradient(at 74% 89%, hsla(30, 98%, 65%, 1) 0, transparent 51%),
+    radial-gradient(at 53% 75%, hsla(174, 94%, 68%, 1) 0, transparent 45%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.company-item:hover {
+  color: #fff;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+}
+
+.clock_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clock_content h1 {
+  color: var(--white-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.clock_content h3 {
+  color: var(--primary-color);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.button {
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+@media (min-width: 900px) {
+  .clock_content h1 {
+    font-size: 3rem;
+  }
+
+  .clock_content h3 {
+    font-size: 1.5rem;
+  }
+}
